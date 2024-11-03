@@ -3,6 +3,8 @@ package org.ronal.pooHerencia;
 public class Alumno extends Persona {
     private String institucion;
     private double notaMatematica;
+    private double notaCastellano;
+    private double notaHistoria;
 
 
     public Alumno() {
@@ -71,6 +73,10 @@ public class Alumno extends Persona {
         this.notaHistoria = notaHistoria;
     }
 
-    private double notaCastellano;
-    private double notaHistoria;
+    @Override
+    public String saludar() {
+        return "Hola soy un alumno";
+    }
+
+
 }
