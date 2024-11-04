@@ -36,13 +36,16 @@ alumnoInt.setEmail("");
 
         System.out.println("======+++++======");
         imprimir(alumno);
+        System.out.println();
         imprimir(alumnoInt);
+        System.out.println();
         imprimir(profesor);
     }
 //Metodo imprimir
 
     public static void imprimir(Persona persona) {
         System.out.println("Imprimiendo los datos en comun del tipo Persona: ");
+
         System.out.println("nombre: " + persona.getNombre()
                 + ", apellido: " + persona.getApellido()
                 + ", edad: " + persona.getEdad()

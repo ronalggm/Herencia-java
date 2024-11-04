@@ -79,6 +79,7 @@ public class Alumno extends Persona {
     }
 
     public double calcularPromedio() {
+        System.out.println("caluclar Promedio:"+Alumno.class.getCanonicalName());
         return (notaHistoria + notaCastellano + notaMatematica) / 3;
     }
 
