@@ -78,5 +78,8 @@ public class Alumno extends Persona {
         return "Hola soy un alumno";
     }
 
+    public double calcularPromedio() {
+        return (notaHistoria + notaCastellano + notaMatematica) / 3;
+    }
 
 }
