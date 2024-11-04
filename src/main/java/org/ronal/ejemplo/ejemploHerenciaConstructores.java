@@ -35,41 +35,17 @@ alumnoInt.setEmail("");
 
 
         System.out.println("======+++++======");
-        imprimir(alumno);
+        Persona.imprimir(alumno);
         System.out.println();
-        imprimir(alumnoInt);
+        Persona.imprimir(alumnoInt);
         System.out.println();
-        imprimir(profesor);
+        Persona.imprimir(profesor);
+
     }
-//Metodo imprimir
-
-    public static void imprimir(Persona persona) {
-        System.out.println("Imprimiendo los datos en comun del tipo Persona: ");
-
-        System.out.println("nombre: " + persona.getNombre()
-                + ", apellido: " + persona.getApellido()
-                + ", edad: " + persona.getEdad()
-                + ", email: " + persona.getEmail());
-
-        if (persona instanceof Alumno) {
-            System.out.println("Imprimiendo los datos del tipo Alumno:");
-            System.out.println(",Intiucion: " + ((Alumno) persona).getInstitucion());
-            System.out.println("Nota matemáticas: " + ((Alumno) persona).getNotaMatematica());
-            System.out.println("Nota Historia: " + ((Alumno) persona).getNotaHistoria());
-            System.out.println("Nota castellano:" + ((Alumno) persona).getNotaCastellano());
-            System.out.println("Imprimiendo los datos del tipo AlumnoInternacional");
 
 
-            if (persona instanceof AlumnoInternacional) {
-                System.out.println("Notqa idiomas:" + ((AlumnoInternacional) persona).getNotaIdiomas());
-                System.out.println("Pais: " + ((AlumnoInternacional) persona).getPais());
-            }
-            System.out.println("========sobre escritura promedio=======");
-            System.out.println("Promedio: "+((Alumno)persona).calcularPromedio());
 
-            if (persona instanceof Profesor) {
-                System.out.println("Asignatura:" + ((Profesor) persona).getAsignatura());
-            }
-        }
 
-    }}
+    //Metodo imprimir
+
+    }
