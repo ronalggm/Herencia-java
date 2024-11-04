@@ -56,10 +56,14 @@ alumnoInt.setEmail("");
             System.out.println("Nota castellano:" + ((Alumno) persona).getNotaCastellano());
             System.out.println("Imprimiendo los datos del tipo AlumnoInternacional");
 
+
             if (persona instanceof AlumnoInternacional) {
                 System.out.println("Notqa idiomas:" + ((AlumnoInternacional) persona).getNotaIdiomas());
                 System.out.println("Pais: " + ((AlumnoInternacional) persona).getPais());
             }
+            System.out.println("========sobre escritura promedio=======");
+            System.out.println("Promedio: "+((Alumno)persona).calcularPromedio());
+
             if (persona instanceof Profesor) {
                 System.out.println("Asignatura:" + ((Profesor) persona).getAsignatura());
             }
