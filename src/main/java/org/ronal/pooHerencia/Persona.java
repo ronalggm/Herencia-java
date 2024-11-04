@@ -57,6 +57,8 @@ public class Persona {
 public String saludar(){
         return "Hola soy una persona";
 }
+
+
     public static void imprimir(Persona persona) {
         System.out.println("Imprimiendo los datos en comun del tipo Persona: ");
 
@@ -85,6 +87,16 @@ public String saludar(){
                 System.out.println("Asignatura:" + ((Profesor) persona).getAsignatura());
             }
         }
+    }
 
-    }}
+    @Override
+    public String toString() {
+        return
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", email='" + email + '\''
+                ;
+    }
+}
 

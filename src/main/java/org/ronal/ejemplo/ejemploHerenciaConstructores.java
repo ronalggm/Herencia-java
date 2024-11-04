@@ -25,7 +25,7 @@ public class ejemploHerenciaConstructores {
         alumnoInt.setNotaCastellano(5.0);
         alumnoInt.setNotaMatematica(10);
         alumnoInt.setNotaHistoria(5);
-alumnoInt.setEmail("");
+        alumnoInt.setEmail("");
         System.out.println("====creando la instancia de la clase Profesor=====");
 
         Profesor profesor = new Profesor("Luci", "gimenez", "matematicas");
@@ -44,8 +44,6 @@ alumnoInt.setEmail("");
     }
 
 
-
-
     //Metodo imprimir
 
-    }
+}

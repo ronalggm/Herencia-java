@@ -88,4 +88,13 @@ public class Alumno extends Persona {
         return (notaHistoria + notaCastellano + notaMatematica) / 3;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\ninstitucion='" + institucion + '\'' +
+                ", notaMatematica=" + notaMatematica +
+                ", notaCastellano=" + notaCastellano +
+                ", notaHistoria=" + notaHistoria
+                ;
+    }
 }
