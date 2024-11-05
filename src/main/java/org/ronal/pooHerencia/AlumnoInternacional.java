@@ -41,7 +41,7 @@ public class AlumnoInternacional extends Alumno {
     @Override
     public String toString() {
         return super.toString() +
-                "pais='" + pais + '\'' +
+                "\npais='" + pais + '\'' +
                 ", notaIdiomas=" + notaIdiomas;
     }
 

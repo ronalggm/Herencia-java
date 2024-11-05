@@ -96,7 +96,7 @@ public String saludar(){
                 ", apellido='" + apellido + '\'' +
                 ", edad=" + edad +
                 ", email='" + email + '\''
-                ;
+                +this.saludar();
     }
 }
 

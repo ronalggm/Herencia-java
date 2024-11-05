@@ -94,7 +94,8 @@ public class Alumno extends Persona {
                 "\ninstitucion='" + institucion + '\'' +
                 ", notaMatematica=" + notaMatematica +
                 ", notaCastellano=" + notaCastellano +
-                ", notaHistoria=" + notaHistoria
-                ;
+                ", notaHistoria=" + notaHistoria+
+                ", promedio"+this.calcularPromedio();
+
     }
 }
